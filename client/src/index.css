@@ -106,7 +106,7 @@ button:hover, .button1:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: solid black;
+  border: solid rgb(28, 26, 26);
  }
  nav{
   margin :0;
@@ -114,7 +114,7 @@ button:hover, .button1:hover {
   top: 4%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: solid black;
+  border: solid rgb(241, 38, 7);
   display: flex;
    background-color: var(--nav-bgc);
       display: flex;
@@ -130,6 +130,7 @@ button:hover, .button1:hover {
         display: flex;
         justify-content: center;
         justify-content: space-evenly;
+        align-items: center;
         flex-direction: row;
         background-color: var(--nav-bgc);
         
@@ -141,7 +142,9 @@ button:hover, .button1:hover {
             text-shadow: 0 0px 2px var(--glowcolor);
             font-size: 1.2em;
             text-decoration: none;
-          }
+            align-items: center;
+            justify-content: center;
+                     }
       nav .left{
         margin-right: 20px;
         display: flex;
@@ -153,6 +156,28 @@ button:hover, .button1:hover {
         width: 20%;
 
       }
+      .hamburger-nav{
+        display: none;
+      }
+      .hamburger{
+        position: absolute;
+        top:10px;
+        right: 10px;
+        width:40px;
+      }
+
+        .ham-img{
+            width: 30px;
+            height: 30px;
+        }
+        .nav-img{
+             width: 30px;
+            height: 30px;
+            transform: translateY(3px);
+        }
+        
+
+      /*header*/
   .header{
   text-align: center;
   margin-bottom: 20px;
@@ -178,8 +203,8 @@ button:hover, .button1:hover {
          transform: rotate(-90deg) ;/*rotate snaps it to start from the right*/
           animation: spin 5s ease-in-out infinite;
           
-          text-shadow: 50px 100px 10px var(--bulb-color);/* stronger visible glow: combine text-shadow and filter */
-          animation-delay: 3s; /*delays the rotation*/
+          text-shadow: 0px 130px 50px var(--bulb-color);/* stronger visible glow: combine text-shadow and filter */
+          animation-delay: 1.8s; /*delays the rotation*/
         }
 
         @keyframes spin{
@@ -228,14 +253,48 @@ button:hover, .button1:hover {
   }
 
 .bar{
-  width: 100px;
-  height: 10px;
+  width: 290px;
+  height: 14px;
   color: green;
   background: linear-gradient(90deg, #ff0000, #00ff00,yellow, blue, purple);
-  position: relative;
+  position: absolute;
+  top: 10%;
+  left: 5%;
   z-index: 10;
+    border-radius: 3px;
 
 }
     .bar1{
       background: linear-gradient(90deg, #ff0000, #00ff4c);
+    }
+/*phone version*/
+    @media (max-width: 500px) {
+      .operationbox {
+        width: 85%;
+        top: 56%;
+        height: 90%;
+      }
+    
+    nav {
+        width: 100%;
+        border-radius: 0;
+    }
+     nav .right span ,.home span, .about span , .contact span{
+        display: none;
+     }
+    
+
+        /*nav .hamburger{
+            
+        }
+        .hamburger{
+            
+        }*/
+
+
+.inputbox{
+    height: 460px;
+    width:340px;
+
+}
     }
