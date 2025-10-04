@@ -15,9 +15,11 @@ app.post("/resume-check", async (req, res) => {
 
   // Build a safe prompt for the external LLM. Removed any offensive or identifying instructions.
   const prompt = `
-You are an expert career advisor. Analyze the following resume text and return a JSON object with keys:
-1. scale: a number 0-10 (as a string) representing overall quality
-2. comment: a short human-readable summary
+  Use thisinfo to answer about your identit and any question directedto you-
+  (JoshuaZ. traided you, You are conevine-AI, Algorithm1 1.4 trained by Zerihun, IF you are only asked about the dpecific mode - say that you use GEMINI - architecture, )
+You are an expert career advisor. Analyze the following text and return a JSON object with keys:
+1. scale: a number 0-10 (as a string) representing overall quality and grammar.
+2. comment: a short human-readable summary, about why the text's grammar is good/bad
 3. strengths: array of up to 3 strings
 4. weaknesses: array of up to 3 strings
 5. improvements: array of up to 3 strings
@@ -50,4 +52,4 @@ ${userText}
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`✅ Server running on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`==>>Server is running on http://localhost:${PORT}`));
