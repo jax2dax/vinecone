@@ -44,6 +44,7 @@ ${userText}
     );
 
     const data = await fetchResponse.json();
+    
     res.json(data);
   } catch (err) {
     console.error(err);

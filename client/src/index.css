@@ -118,7 +118,7 @@ button:hover, .button1:hover {
   display: flex;
    background-color: var(--nav-bgc);
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
       width: clamp(300px, 90%, 1500px);
       height: clamp(50px, 7%, 100px);
@@ -186,7 +186,7 @@ button:hover, .button1:hover {
   text-shadow: 0 9px 5px var(--glowcolor);
       }
       h1::before{
-        content: "H";
+        content: "v";
        
         display: inline-block; /* allow transforms */
         
