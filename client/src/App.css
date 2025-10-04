@@ -1,0 +1,10 @@
+/* Copied styling (trimmed) */
+:root {
+  background-color: #242424;
+  --body-bgc: #020516;
+  --bgc: rgb(28, 30, 54);
+}
+body{ background-color:var(--body-bgc); }
+.operationbox{ max-width:800px; margin:auto }
+
+/* Keep the rest of the styles from the original project as needed */
